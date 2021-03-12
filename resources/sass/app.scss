@@ -1,0 +1,51 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+// imageComponent
+
+body, .v-application {
+  background-color: #8D99AE !important;
+  color: white !important;
+}
+
+main {
+  width: 50%;
+  max-width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+
+.navbar {
+  background-color: #2B2D42 !important;
+  a {
+    color: #EDF2F4 !important;
+  }
+}
+
+.drMenu {
+  background-color: #2B2D42 !important;
+}
+
+.card-body, .card-header, .card {
+  background-color: #2B2D42 !important;
+}
+
+.image {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
