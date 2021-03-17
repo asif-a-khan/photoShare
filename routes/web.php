@@ -19,3 +19,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/upload', [App\Http\Controllers\HomeController::class, 'upload'])->name('upload');
+
+Route::resource('/food', App\Http\Controllers\FoodController::class);
+Route::resource('/car', App\Http\Controllers\CarController::class);

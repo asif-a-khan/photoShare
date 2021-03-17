@@ -15,8 +15,7 @@ class CreateImagesTable extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id'); // big_integer not null unsigned
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->unsignedBigInteger('user_id')->foreign('user_id')->references('id')->on('users');
             $table->string('name');
             $table->timestamps();
         });

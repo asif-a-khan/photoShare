@@ -44,6 +44,8 @@ class HomeController extends Controller
 
         // get all the images with the user who posted them
         $images = DB::table('images')
+        // Declare the name of the related table. 
+        // Second param is the foreign key where the user_id equals the id of the current user.
         ->join('users', 'images.user_id', '=', 'users.id')
         ->select('images.*', 'users.name as user_name', 'users.email as user_email')
         ->get();

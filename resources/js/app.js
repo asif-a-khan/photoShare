@@ -7,6 +7,7 @@ Vue.use(Vuetify)
 // components
 // Vue.component('counter-component', require('./components/CounterComponent.vue').default);
 Vue.component('image-component', require('./components/ImageComponent.vue').default);
+Vue.component('car-component', require('./components/CarComponent.vue').default);
 
 
 const app = new Vue({
